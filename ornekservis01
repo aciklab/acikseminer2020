@@ -1,0 +1,5 @@
+
+#!/bin/bash
+
+python3 /usr/share/benimservislerim/ornekservis01.py
+sleep 500

@@ -1,0 +1,13 @@
+[Unit]
+Description="ornekservis01"
+Requires=networking.service
+After=networking.service
+
+[Service]
+ExecStart=/usr/bin/ornekservis01
+ExecStop=/usr/bin/killall ornekservis01
+Restart=on-failure
+Restart-sec=2
+
+[Install]
+WantedBy=multi-user.target
