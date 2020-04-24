@@ -192,7 +192,7 @@ gidNumber: 2001
 memberUid: ali
 " > grup.ldif
 ```
-Oluşturulan ldiff ile belirtilen özelliklere sahip organizasyonlar, ldapadd komutu ile eklenir. 
+Oluşturulan ldiff ile belirtilen özelliklere sahip gruplar, ldapadd komutu ile eklenir. 
 ```
 ldapadd -x -D  cn=admin,dc=ornek,dc=ldap,dc=com -W -f grup.ldif 
 ```
@@ -225,6 +225,9 @@ uidNumber: 2001
 gidNumber: 2001
 homeDirectory: /home/ali
 " > kisiler.ldif
+```
+Oluşturulan ldiff ile belirtilen özelliklere sahip gruplar, ldapadd komutu ile eklenir. 
+```
 ldapadd -x -D  cn=admin,dc=ornek,dc=ldap,dc=com -W -f kisiler.ldif 
 ```
 # Ldap kisi sorgusu
