@@ -226,7 +226,7 @@ gidNumber: 2001
 homeDirectory: /home/ali
 " > kisiler.ldif
 ```
-Oluşturulan ldiff ile belirtilen özelliklere sahip gruplar, ldapadd komutu ile eklenir. 
+Oluşturulan ldiff ile belirtilen özelliklere sahip kullanıcılar, ldapadd komutu ile eklenir. 
 ```
 ldapadd -x -D  cn=admin,dc=ornek,dc=ldap,dc=com -W -f kisiler.ldif 
 ```
