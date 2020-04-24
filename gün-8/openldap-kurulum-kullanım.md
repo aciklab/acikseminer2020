@@ -232,7 +232,10 @@ ldapadd -x -D  cn=admin,dc=ornek,dc=ldap,dc=com -W -f kisiler.ldif
 ```
 # Ldap kisi sorgusu
 * openldaptaki kökten itibaren tüm kullanıcıları bulur
+```
 ldapsearch -x -b "dc=ornek,dc=ldap,dc=com" -H ldap://127.0.0.1 "objectClass=inetOrgPerson" -
-
+```
 * openldaptaki kökten itibaren telefon numarası boş olmayan kullanıcıları bulur
+```
 ldapsearch -x -b "dc=ornek,dc=ldap,dc=com" -H ldap://127.0.0.1 "mobile=*" -
+```
