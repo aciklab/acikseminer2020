@@ -13,6 +13,13 @@ Samba sunucusu kurulumu için samba-20200423-221809.deb paketinin bulunduğu diz
 ```
 sudo apt install -y ./samba-20200423-221809.deb  
 ```
+# Samba Domaini oluşturma
+samba-20200423-221809.deb   paketini yükledikten sonra aşağıdaki komutla domain kurulumunu yapabilirsiniz.
+`home.lab` oluşturmak istediğiniz domain, `Passw0rd` ise administrator kullanıcısının parolası. Bu değerleri değiştirerek kullanabilirsiniz
+```
+smb-create-domain home.lab Passw0rd
+```
+
 # Pardus makineyi Windows ya da Samba domainine ekleme
 domainjoin.py komutunu pardus makinesi kopyaladıktan sonra aşağıdaki komut iile çalıştırılır
 ```
