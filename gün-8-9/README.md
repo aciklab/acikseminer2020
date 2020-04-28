@@ -21,7 +21,7 @@ smb-create-domain home.lab Passw0rd
 ```
 
 # Pardus makineyi Windows ya da Samba domainine ekleme
-domainjoin.py komutunu pardus makinesi kopyaladıktan sonra aşağıdaki komut iile çalıştırılır
+domainjoin.py komutunu pardus makinesi kopyaladıktan sonra aşağıdaki komut ile çalıştırılır
 ```
 sudo python /kodun_bulunduğu_yol/domainjoin.py
 ```
